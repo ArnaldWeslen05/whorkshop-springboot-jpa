@@ -1,19 +1,22 @@
 package com.arnaldweslen.course.entites;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name ="tb_user")
-public class User implements Serializable{
+@Table(name = "tb_user")
+public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -21,9 +24,12 @@ public class User implements Serializable{
 	private String email;
 	private String fone;
 	private String password;
-	
+
+	@OneToMany(mappedBy = "client" )
+	private List<Order> orders = new ArrayList<>();
+
 	public User() {
-		
+
 	}
 
 	public User(Long id, String name, String email, String fone, String password) {
@@ -75,6 +81,10 @@ public class User implements Serializable{
 		this.fone = fone;
 	}
 
+	public List<Order> getOrders() {
+		return orders;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -91,7 +101,5 @@ public class User implements Serializable{
 		User other = (User) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
-}
 
+}
