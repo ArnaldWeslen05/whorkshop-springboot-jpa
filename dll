@@ -1,0 +1,41 @@
+[33mcommit 4c596842d09b1a6833857957479759e9ba3b7623[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ArnaldWelen05 <arnaldclash@gmail.com>
+Date:   Sun Oct 20 23:13:13 2024 -0300
+
+    Order, Instant , ISO 8601 - PART2
+
+[33mcommit 322bd85e6ea778cd8f9c851b71087e58f9f77c91[m
+Author: ArnaldWelen05 <arnaldclash@gmail.com>
+Date:   Sun Oct 20 22:20:21 2024 -0300
+
+    Order, Instant , ISO 8601 - PART1
+
+[33mcommit ae3610d5565f8cad9e0597166b899b6773284e05[m
+Author: ArnaldWelen05 <arnaldclash@gmail.com>
+Date:   Sun Oct 20 04:10:40 2024 -0300
+
+    Service layer, component registration
+
+[33mcommit b7f64cd549438a8866a59daa3a63d5989106ce72[m
+Author: ArnaldWelen05 <arnaldclash@gmail.com>
+Date:   Sun Oct 20 03:41:31 2024 -0300
+
+    JPA repository , dependency injection , database seeding
+
+[33mcommit 7c1cc797e06ca910dff6cb6f5f94627c149716c9[m
+Author: ArnaldWelen05 <arnaldclash@gmail.com>
+Date:   Sun Oct 20 02:28:43 2024 -0300
+
+    H2, database, test profile, JPA
+
+[33mcommit 3592a7f10b3823c1033b47cf0c9bd948363ddbb7[m
+Author: ArnaldWelen05 <arnaldclash@gmail.com>
+Date:   Sun Oct 20 02:00:25 2024 -0300
+
+    User entity and resource
+
+[33mcommit 50ab52ee4142501c29cb71edb6d99ebd13be42a6[m
+Author: ArnaldWelen05 <arnaldclash@gmail.com>
+Date:   Sun Oct 20 01:13:27 2024 -0300
+
+    Project created
