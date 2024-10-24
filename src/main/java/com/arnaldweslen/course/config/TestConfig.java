@@ -10,10 +10,12 @@ import org.springframework.context.annotation.Profile;
 
 import com.arnaldweslen.course.entites.Category;
 import com.arnaldweslen.course.entites.Order;
+import com.arnaldweslen.course.entites.OrderItem;
 import com.arnaldweslen.course.entites.Product;
 import com.arnaldweslen.course.entites.User;
 import com.arnaldweslen.course.entites.enums.OrderStatus;
 import com.arnaldweslen.course.respositories.CategoryRepository;
+import com.arnaldweslen.course.respositories.OrderItemRepository;
 import com.arnaldweslen.course.respositories.OrderRepository;
 import com.arnaldweslen.course.respositories.ProductRepository;
 import com.arnaldweslen.course.respositories.UserRepository;
@@ -33,6 +35,9 @@ public class TestConfig implements CommandLineRunner {
 
 	@Autowired
 	private ProductRepository productRepository;
+
+	@Autowired
+	private OrderItemRepository oderItemRepository;
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -68,5 +73,13 @@ public class TestConfig implements CommandLineRunner {
 
 		userRepository.saveAll(Arrays.asList(u1, u2));
 		orderRepository.saveAll(Arrays.asList(o1, o2, o3));
+
+		OrderItem oi1 = new OrderItem(o1, p1, 2, p1.getPrice());
+		OrderItem oi2 = new OrderItem(o1, p3, 1, p3.getPrice());
+		OrderItem oi3 = new OrderItem(o2, p3, 2, p3.getPrice());
+		OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
+
+		oderItemRepository.saveAll(Arrays.asList(oi1, oi2, oi3, oi4));
+
 	}
 }
