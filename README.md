@@ -110,7 +110,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 1. Clone o repositório:
    ```bash
-   git clone <url_do_repositorio>
+   git clone <https://github.com/ArnaldWeslen05/whorkshop-springboot-jpa.git>
    ```
 2. Compile e execute o projeto:
    ```bash
